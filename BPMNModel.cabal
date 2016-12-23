@@ -1,0 +1,25 @@
+Name:                bpmncsp
+Version:             0.1
+Synopsis:            BPMN to CSP
+Description:         BPMN to CSP
+License:             MIT
+License-File:	       LICENSE
+Author:              Peter Wong
+Maintainer:          peterwong1228@gmail.com
+Stability:           Experimental
+Category:            Web
+Build-type:          Simple
+Cabal-version:       >=1.10
+
+source-repository head
+  type:     git
+  location: https://github.com/peteryhwong/bpmn-csp/
+
+executable transform
+  default-language: Haskell2010
+  hs-source-dirs:   src
+  main-is:          Main.hs
+
+  Build-depends:
+    base                      >=4 && < 5,
+    HaXml                     == 1.25.3
